@@ -1,32 +1,35 @@
 ; (function () {
     var container;
-    var overlayDelay = 1000;
-    var adDelay = 6000;
+    var overlayDelay = 0;
+    var adDelay = 6;
 
-    var id = setInterval(function () {
+    var tmp = setInterval(function () {
         if (window.location.pathname !== '/watch') {
             return;
         }
         container = document.getElementById('player-container');
 
         if (container) {
-            console.log(container);
             container.arrive(".ytp-ad-overlay-close-button", function () {
-                click(this, overlayDelay);
+                click(this, overlayDelay * 1000);
             })
-            container.arrive(".ytp-ad-skip-button ytp-button", function () {
-                let button = document.getElementsByClassName('ytp-ad-skip-button ytp-button')[0];
-                console.log(this);
+            container.arrive(".ytp-ad-skip-button.ytp-button", function () {
+                click(this, adDelay * 1000);
+                // let button = document.getElementsByClassName('ytp-ad-skip-button ytp-button')[0];
+                // console.log(this);
 
-                while (button) {
-                    click(button, 0);
-                    button = document.getElementsByClassName('ytp-ad-skip-button ytp-button')[0];
-                }
+                // let skipLoop = setInterval(function(){
+                //     click(button, 0);
+                //     button = document.getElementsByClassName('ytp-ad-skip-button ytp-button')[0];
+                //     if(!button){
+                //         clearInterval(skipLoop);
+                //     }
+                // }, adDelay * 1000)
             })
-            clearInterval(id);
+            clearInterval(tmp);
         }
 
-    }, 1000);
+    }, 500);
 
     function click(element, delay) {
         setTimeout(function () {
