@@ -1,0 +1,12 @@
+殼：
+ytp-ad-skip-button-container
+
+內裝：
+ytp-ad-skip-button ytp-button
+
+略過廣告的文字：
+class: ytp-ad-text ytp-ad-skip-button-text
+id: ad-text:i
+
+圖案：
+ytp-ad-skip-button-icon
