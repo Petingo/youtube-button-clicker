@@ -15,16 +15,6 @@
             })
             container.arrive(".ytp-ad-skip-button.ytp-button", function () {
                 click(this, adDelay * 1000);
-                // let button = document.getElementsByClassName('ytp-ad-skip-button ytp-button')[0];
-                // console.log(this);
-
-                // let skipLoop = setInterval(function(){
-                //     click(button, 0);
-                //     button = document.getElementsByClassName('ytp-ad-skip-button ytp-button')[0];
-                //     if(!button){
-                //         clearInterval(skipLoop);
-                //     }
-                // }, adDelay * 1000)
             })
             clearInterval(tmp);
         }
