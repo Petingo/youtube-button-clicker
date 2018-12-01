@@ -1,11 +1,11 @@
 {
     "name": "Youtube Ad Auto Skipper",
     "short_name": "Youtube Ad skipper",
-    "description": "**This Extension would NOT block any ads.** \n It only helps you click the 'skip ad' button and the 'close' button of an overlay ad.  With this, you won't be bother when listening to music or watching videos.",
+    "description": "This extension helps you click the \"skip\" and \"close\" button of an ad in Youtube.",
     "manifest_version": 2,
     "version": "1.0.0",
     "author": "Petingo",
-    "homepage_url": "http://petingo.me",
+    "homepage_url": "https://github.com/Petingo/youtube-ad-auto-skipper",
     "content_scripts": [
         {
             "matches": [
