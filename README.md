@@ -9,4 +9,4 @@ A chrome extension which helps you click the "skip" and "close" button of an ad 
 - Delay time can be set individually.
 
 ## Maybe In The Future
-- A key press to stop the bot temporary so that you can watch the whole ad.
+- A key press to stop the bot temporarily so that you can watch the whole ad.
