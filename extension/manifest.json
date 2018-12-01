@@ -12,11 +12,22 @@
                 "*://*.youtube.com/*"
             ],
             "js": [
-                "arrive.min.js",
+                "/lib/arrive.min.js",
                 "app.js"
             ],
             "run_at": "document_idle",
             "all_frames": true
         }
-    ]
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "options_ui": {
+        "page": "/options/options.html"
+    },
+    "icons": {
+        "16": "/icon/icon16.png",
+        "48": "/icon/icon48.png",
+        "128": "/icon/icon128.png"
+    }
 }

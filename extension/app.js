@@ -1,7 +1,19 @@
 ; (function () {
+
     var container;
-    var overlayDelay = 0;
-    var adDelay = 6;
+
+    var videoAdDelay = 5;
+    var overlayAdDelay = 3;
+
+    chrome.storage.sync.get({
+        videoAdDelay: 5,
+        overlayAdDelay: 3
+    }, function (items) {
+        videoAdDelay = items.videoAdDelay;
+        overlayAdDelay = items.overlayAdDelay;
+    });
+
+
 
     var tmp = setInterval(function () {
         if (window.location.pathname !== '/watch') {
@@ -11,10 +23,10 @@
 
         if (container) {
             container.arrive(".ytp-ad-overlay-close-button", function () {
-                click(this, overlayDelay * 1000);
+                click(this, overlayAdDelay * 1000);
             })
             container.arrive(".ytp-ad-skip-button.ytp-button", function () {
-                click(this, adDelay * 1000);
+                click(this, videoAdDelay * 1000);
             })
             clearInterval(tmp);
         }
