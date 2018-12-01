@@ -1,5 +1,6 @@
 # Youtube Ad Auto Skipper
 This extension helps you click the "skip" and "close" button of an ad in Youtube.
+
 **This Extension would NOT block any ads.**
 
 ## Feature
