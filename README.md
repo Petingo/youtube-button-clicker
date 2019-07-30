@@ -9,7 +9,7 @@ A chrome extension which helps you click the "skip" and "close" button of an ad 
 
 <p align="center">
   <a href="https://chrome.google.com/webstore/detail/youtube-ad-auto-skipper/nmjkfcaihjbckbdiepglpmelocnmilop">
-    <img src="https://github.com/Petingo/youtube-ad-auto-skipper/blob/master/icon512.png" height="256">
+    <img src="https://github.com/Petingo/youtube-ad-auto-skipper/raw/master/icon/icon512.png" height="256">
   </a>
 </p>
 
