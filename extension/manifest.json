@@ -1,11 +1,11 @@
 {
-    "name": "Youtube Ad Auto Skipper",
-    "short_name": "Youtube Ad skipper",
-    "description": "This extension helps you click the \"skip\" and \"close\" button of an ad in Youtube.",
+    "name": "Youtube button clicker",
+    "short_name": "Youtube button clicker",
+    "description": "This extension helps you click the \"skip\" and \"close\" button of an ad in Youtube, as well as the \"Are you still watching\" window.",
     "manifest_version": 2,
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "Petingo",
-    "homepage_url": "https://github.com/Petingo/youtube-ad-auto-skipper",
+    "homepage_url": "https://github.com/Petingo/youtube-button-clicker",
     "content_scripts": [
         {
             "matches": [
