@@ -22,6 +22,9 @@
     "permissions": [
         "storage"
     ],
+    "browser_action": {
+        "default_popup": "/options/options.html"
+    },
     "options_ui": {
         "page": "/options/options.html"
     },
