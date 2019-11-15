@@ -11,6 +11,8 @@ A chrome extension which helps you click the "skip" and "close" button of an ad 
   </a>
 </p>
 
+- If it is removed from Chrome store by Google again, please download file from "release" fold and load it manually.
+
 ## Feature
 - Click "skip ad" button of an video ad automatically.
 - Click "close" button of an overlay ad automatically.
