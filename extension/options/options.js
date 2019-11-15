@@ -1,18 +1,24 @@
+function isValid(n){
+    return !isNaN(n) && n >= 0
+}
 // save options when "save" button click
 function saveOptions() {
     let videoAdDelay = Number(document.getElementById('videoAdDelay').value)
     let overlayAdDelay = Number(document.getElementById('overlayAdDelay').value)
+    let nextVideoDelay = Number(document.getElementById('nextVideoDelay').value)
 
     var status = document.getElementById('status');
 
-    if (!isNaN(videoAdDelay) && !isNaN(overlayAdDelay) && videoAdDelay >= 0 && overlayAdDelay >= 0) {
+    if (isValid(videoAdDelay) && isValid(overlayAdDelay) && isValid(nextVideoDelay)) {
         console.log({
             videoAdDelay: videoAdDelay,
-            overlayAdDelay: overlayAdDelay
+            overlayAdDelay: overlayAdDelay,
+            nextVideoDelay: nextVideoDelay
         })
         chrome.storage.sync.set({
             videoAdDelay: videoAdDelay,
-            overlayAdDelay: overlayAdDelay
+            overlayAdDelay: overlayAdDelay,
+            nextVideoDelay: nextVideoDelay
         }, function () {
             // Update status to let user know options were saved.
             status.classList.add("mt-3")
@@ -29,10 +35,12 @@ function saveOptions() {
 function restoreOptions() {
     chrome.storage.sync.get({
         videoAdDelay: 5,
-        overlayAdDelay: 3
+        overlayAdDelay: 3,
+        nextVideoDelay: 10
     }, function (items) {
         document.getElementById('videoAdDelay').value = items.videoAdDelay;
         document.getElementById('overlayAdDelay').value = items.overlayAdDelay;
+        document.getElementById('nextVideoDelay').value = items.nextVideoDelay;
     });
 }
 

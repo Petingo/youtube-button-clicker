@@ -3,12 +3,12 @@
 
     let videoAdDelay = 5;
     let overlayAdDelay = 3;
-    let nextVideoDelay = 8;
+    let nextVideoDelay = 10;
 
     chrome.storage.sync.get({
         videoAdDelay: 5,
         overlayAdDelay: 3,
-        nextVideoDelay: 3
+        nextVideoDelay: 10
     }, function (config) {
         console.log("retrived config:", config)
         videoAdDelay = config.videoAdDelay;

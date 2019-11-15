@@ -1,5 +1,5 @@
 # Youtube Button Clicker
-A chrome extension which helps you click the "skip" and "close" button of an ad in Youtube, as well as the "Are you still watching?" window.
+A chrome extension which helps you click the "skip" and "close" button of an ad in Youtube, as well as the "Are you still watching?" window. Furthurmore, when video stopped after playing for a while, it will click "next video".
 
 **This extension would NOT block any ads.**
 
@@ -12,17 +12,22 @@ A chrome extension which helps you click the "skip" and "close" button of an ad 
 </p>
 
 ## Feature
-- click "skip ad" button of an video ad automatically.
-- click "close" button of an overlay ad automatically.
+- Click "skip ad" button of an video ad automatically.
+- Click "close" button of an overlay ad automatically.
 - Delay time can be set individually.
-- click "continue" when "are you still watching" window pop-up.
+- Click "continue" when "are you still watching" window pop-up.
+- Click "next video" when video stopped after playing for a while.
 
 ## Maybe In The Future
 - A key press to stop the bot temporarily so that you can watch the whole ad.
 
 ## Update
+### 1.2.0
+- When video stopped after playing for a while, it will click "next video".
+
 ### 1.1.0
-It now skip "are you still watching?" window, too.
+- Change name to "Youtube Button Clicker".
+- It now skip "Are you still watching?" window
 
 ### 1.0.0
-First release
+- First release
