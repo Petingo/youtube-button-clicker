@@ -8,7 +8,7 @@
     chrome.storage.sync.get({
         videoAdDelay: 5,
         overlayAdDelay: 3,
-        nextVideoDelay: 8
+        nextVideoDelay: 3
     }, function (config) {
         console.log("retrived config:", config)
         videoAdDelay = config.videoAdDelay;
@@ -29,24 +29,25 @@
             }
     
             // video automatically paused in background
-            // let video = document.getElementsByTagName('video')[0]
-            // if(video && !setupStatus.videoEnd){
-            //     setupStatus.videoEnd = true
-            //     video.addEventListener('ended', function (e) {
-            //         let endedVideo = window.location.href
-            //         console.log(window.location.href)
-            //         setTimeout(() => {
-            //             console.log(window.location.href)
-            //             if(window.location.href == endedVideo){
-            //                 console.log("go to up next video")
-            //                 document.querySelector("#dismissable > div.metadata.style-scope.ytd-compact-video-renderer > a").click()
-            //             } else {
-            //                 console.log("already get to next")
-            //             }
+            let video = document.getElementsByTagName('video')[0]
+            if(video && !setupStatus.videoEnd){
+                setupStatus.videoEnd = true
+                video.addEventListener('ended', function (e) {
+                    let endedVideo = window.location.href
+                    console.log(window.location.href)
+                    setTimeout(() => {
+                        // console.log("check if we should go next")
+                        // console.log(window.location.href)
+                        if(window.location.href == endedVideo){
+                            console.log("go to up next video")
+                            document.querySelector("#movie_player > div.ytp-chrome-bottom > div.ytp-chrome-controls > div.ytp-left-controls > a.ytp-next-button.ytp-button").click()
+                        } else {
+                            console.log("already get to next")
+                        }
                         
-            //         }, nextVideoDelay * 1000)
-            //     });
-            // }
+                    }, nextVideoDelay * 1000)
+                });
+            }
             
     
             // video has already paused popup

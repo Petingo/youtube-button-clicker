@@ -3,10 +3,10 @@ A chrome extension which helps you click the "skip" and "close" button of an ad 
 
 **This extension would NOT block any ads.**
 
-[Link to Chrome Store](chrome.google.com/webstore/detail/youtube-button-clicker/mnbaldbdmilbhdbmmogpeildjddligkn/)
+[Link to Chrome Store](https://chrome.google.com/webstore/detail/youtube-button-clicker/mnbaldbdmilbhdbmmogpeildjddligkn/)
 
 <p align="center">
-  <a href="chrome.google.com/webstore/detail/youtube-button-clicker/mnbaldbdmilbhdbmmogpeildjddligkn/">
+  <a href="https://chrome.google.com/webstore/detail/youtube-button-clicker/mnbaldbdmilbhdbmmogpeildjddligkn/">
     <img src="https://github.com/Petingo/youtube-ad-auto-skipper/raw/master/icon/icon512.png" height="256">
   </a>
 </p>
